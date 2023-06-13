@@ -11,7 +11,7 @@ import Typewriter from "./components/Typewriter.jsx";
 import PersonalTimeline from "./components/PersonalTimeline.jsx";
 
 function App() {
-
+    const about = ['Aspiring Code Alchemist','Intermediate Backend Maestro', 'Floorball Enthusiast', 'IT Security Practitioner'];
   return (
     <>
         <Navbar></Navbar>
@@ -25,7 +25,7 @@ function App() {
         <Skills></Skills>
         <Resume></Resume>
         <Projects></Projects>
-        <Typewriter></Typewriter>
+        <Typewriter sentences={about}></Typewriter>
 
     </>
   )
