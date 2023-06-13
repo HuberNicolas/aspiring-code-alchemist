@@ -6,9 +6,9 @@ import Education from "./components/Education.jsx";
 import Contact from "./components/Contact.jsx";
 import Jokes from "./components/Jokes.jsx";
 import Resume from "./components/Resume.jsx";
-import Timeline from "./components/Timeline.jsx";
 import Projects from "./components/Projects.jsx";
 import Typewriter from "./components/Typewriter.jsx";
+import PersonalTimeline from "./components/PersonalTimeline.jsx";
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
         <Hero></Hero>
 
         <Education></Education>
-        <Timeline></Timeline>
+        <PersonalTimeline></PersonalTimeline>
         <Skills></Skills>
         <Contact></Contact>
         <Skills></Skills>
