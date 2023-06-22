@@ -14,6 +14,8 @@ import {useRef} from "react";
 import { createMuiTheme } from '@mui/material/styles';
 import {ThemeProvider} from "@mui/material";
 import Button from '@mui/material/Button';
+import ProjectCard from "./components/ProjectCard.jsx";
+
 
 const theme = createMuiTheme({
 
@@ -81,6 +83,7 @@ echo "Hello, World!";
                     <Typewriter sentences={about}></Typewriter>
                     <Button variant="contained" color="primary">Secondary</Button>
                     <Button variant="contained" color="secondary">Secondary</Button>
+                    <ProjectCard></ProjectCard>
 
                 </ParallaxLayer>
                 <ParallaxLayer
