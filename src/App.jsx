@@ -99,9 +99,7 @@ echo "Hello, World!";
                     <Typewriter sentences={about}></Typewriter>
                     <Button variant="contained" color="primary">Secondary</Button>
                     <Button variant="contained" color="secondary">Secondary</Button>
-                    {projects.map((project, index) => (
-                        <ProjectCard key={index} {...project} />
-                    ))}
+
 
                 </ParallaxLayer>
                 <ParallaxLayer
@@ -133,6 +131,9 @@ echo "Hello, World!";
                 <ParallaxLayer offset={3} speed={0.75}>
                     <h1>Projects</h1>
                     <Projects></Projects>
+                    {projects.map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                    ))}
 
                 </ParallaxLayer>
                 <ParallaxLayer offset={4} speed={0.3}>
