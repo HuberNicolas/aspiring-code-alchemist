@@ -8,7 +8,6 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import MergeIcon from '@mui/icons-material/Merge';
 import SendIcon from '@mui/icons-material/Send';
 
-import './Navbar.scss';
 import avatarImage from '../assets/profile.jpg';
 
 const pages = [
@@ -32,10 +31,13 @@ function Navbar() {
 
     return (
         <>
-            <AppBar position="static">
+            <AppBar position="static"
+            >
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Avatar alt="Nicolas Huber" src={avatarImage}/>
+                        <Avatar alt="Nicolas Huber" src={avatarImage} sx={{
+                            marginRight: 10
+                        }}/>
                         <Typography
                             variant="h6"
                             noWrap

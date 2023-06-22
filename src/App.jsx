@@ -1,4 +1,3 @@
-import './App.scss'
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
@@ -12,8 +11,33 @@ import PersonalTimeline from "./components/PersonalTimeline.jsx";
 import ProgrammingCode from "./components/ProgrammingCode.jsx";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import {useRef} from "react";
+import { createMuiTheme } from '@mui/material/styles';
+import {ThemeProvider} from "@mui/material";
+import Button from '@mui/material/Button';
+
+const theme = createMuiTheme({
+
+    // background: $navy: #0a192f;
+    palette: {
+        // Dark Blue: main: '#0d1528'
+        // Midnight Blue: main: '#030a18'
+        // Navy Blue: main: '#041227'
+        primary: {
+            main: '#041227',
+        },
+
+
+        // Light Blue: main: '#90caf9'
+        // Teal: main: '#26a69a'
+        // Aqua: main: '#00bcd4'
+        secondary: {
+            main: '#009688',
+        },
+    },
+});
 
 function App() {
+
     const ref = useRef();
 
     const about = ['Aspiring Code Alchemist','Intermediate Backend Maestro', 'Floorball Enthusiast', 'IT Security Practitioner'];
@@ -47,56 +71,60 @@ echo "Hello, World!";
 
     return (
     <>
-        <Navbar></Navbar>
-        <Parallax pages={4} ref={ref}>
-            <ParallaxLayer>
-                <h1>Home</h1>
-                <Jokes></Jokes>
-                <Hero></Hero>
-                <Typewriter sentences={about}></Typewriter>
+        <ThemeProvider theme={theme}>
+            <Navbar></Navbar>
+            <Parallax pages={4} ref={ref}>
+                <ParallaxLayer>
+                    <h1>Home</h1>
+                    <Jokes></Jokes>
+                    <Hero></Hero>
+                    <Typewriter sentences={about}></Typewriter>
+                    <Button variant="contained" color="primary">Secondary</Button>
+                    <Button variant="contained" color="secondary">Secondary</Button>
 
-            </ParallaxLayer>
-            <ParallaxLayer
-                offset={1}
-                onClick={() => ref.current.scrollTo(3)}
-            >
-                <h1>Education</h1>
-                <Education></Education>
-                <PersonalTimeline></PersonalTimeline>
-                <Resume></Resume>
+                </ParallaxLayer>
+                <ParallaxLayer
+                    offset={1}
+                    onClick={() => ref.current.scrollTo(3)}
+                >
+                    <h1>Education</h1>
+                    <Education></Education>
+                    <PersonalTimeline></PersonalTimeline>
+                    <Resume></Resume>
 
-            </ParallaxLayer>
-            <ParallaxLayer
-                offset={2}
-                onClick={() => ref.current.scrollTo(1)}
-                speed={0.5}
-            >
-                <h1>Skills</h1>
-                <Skills></Skills>
-                <ProgrammingCode language="javascript" code={JSCode} />
-                <ProgrammingCode language="java" code={javaCode} />
-                <ProgrammingCode language="latex" code={latexCode} />
-                <ProgrammingCode language="php" code={phpCode} />
-                <ProgrammingCode language="python" code={pythonCode} />
-                <ProgrammingCode language="sql" code={sqlCode} />
-
-
-            </ParallaxLayer>
-            <ParallaxLayer offset={3} speed={0.75}>
-                <h1>Projects</h1>
-                <Projects></Projects>
-
-            </ParallaxLayer>
-            <ParallaxLayer offset={4} speed={0.3}>
-                <h1>Contact</h1>
-                <Contact></Contact>
-
-            </ParallaxLayer>
+                </ParallaxLayer>
+                <ParallaxLayer
+                    offset={2}
+                    onClick={() => ref.current.scrollTo(1)}
+                    speed={0.5}
+                >
+                    <h1>Skills</h1>
+                    <Skills></Skills>
+                    <ProgrammingCode language="javascript" code={JSCode} />
+                    <ProgrammingCode language="java" code={javaCode} />
+                    <ProgrammingCode language="latex" code={latexCode} />
+                    <ProgrammingCode language="php" code={phpCode} />
+                    <ProgrammingCode language="python" code={pythonCode} />
+                    <ProgrammingCode language="sql" code={sqlCode} />
 
 
+                </ParallaxLayer>
+                <ParallaxLayer offset={3} speed={0.75}>
+                    <h1>Projects</h1>
+                    <Projects></Projects>
+
+                </ParallaxLayer>
+                <ParallaxLayer offset={4} speed={0.3}>
+                    <h1>Contact</h1>
+                    <Contact></Contact>
+
+                </ParallaxLayer>
 
 
-        </Parallax>
+
+
+            </Parallax>
+        </ThemeProvider>
     </>
   )
 }

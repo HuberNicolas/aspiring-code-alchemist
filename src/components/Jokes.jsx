@@ -3,7 +3,6 @@ function Jokes() {
     return (
         <>
             <div>Jokes</div>
-
         </>
     )
 }
