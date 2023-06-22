@@ -11,13 +11,14 @@ import PersonalTimeline from "./components/PersonalTimeline.jsx";
 import ProgrammingCode from "./components/ProgrammingCode.jsx";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import {useRef} from "react";
-import { createMuiTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import {ThemeProvider} from "@mui/material";
 import Button from '@mui/material/Button';
 import ProjectCard from "./components/ProjectCard.jsx";
+import {faGithub, faPython} from "@fortawesome/free-brands-svg-icons";
 
 
-const theme = createMuiTheme({
+const theme = createTheme({
 
     // background: $navy: #0a192f;
     palette: {
@@ -37,6 +38,21 @@ const theme = createMuiTheme({
         },
     },
 });
+
+const projects = [
+    {
+        name: 'Project 1',
+        description: 'This is the first project',
+        skills: [faPython, faGithub],
+        repoLink: 'https://github.com/project1'
+    },
+    {
+        name: 'Project 2',
+        description: 'This is the second project',
+        skills: [faPython],
+        repoLink: 'https://github.com/project2'
+    }
+];
 
 function App() {
 
@@ -83,7 +99,9 @@ echo "Hello, World!";
                     <Typewriter sentences={about}></Typewriter>
                     <Button variant="contained" color="primary">Secondary</Button>
                     <Button variant="contained" color="secondary">Secondary</Button>
-                    <ProjectCard></ProjectCard>
+                    {projects.map((project, index) => (
+                        <ProjectCard key={index} {...project} />
+                    ))}
 
                 </ParallaxLayer>
                 <ParallaxLayer
