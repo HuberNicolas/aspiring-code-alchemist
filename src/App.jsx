@@ -8,7 +8,7 @@ import Resume from "./components/Resume.jsx";
 import Projects from "./components/Projects.jsx";
 import Typewriter from "./components/Typewriter.jsx";
 import PersonalTimeline from "./components/PersonalTimeline.jsx";
-import ProgrammingCode from "./components/ProgrammingCode.jsx";
+import TypedProgrammingCode from "./components/TypedProgrammingCode.jsx";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import {useRef} from "react";
 import { createTheme } from '@mui/material/styles';
@@ -16,6 +16,7 @@ import {ThemeProvider} from "@mui/material";
 import Button from '@mui/material/Button';
 import ProjectCard from "./components/ProjectCard.jsx";
 import {faGithub, faPython} from "@fortawesome/free-brands-svg-icons";
+import ProgrammingCode from "./components/ProgrammingCode.jsx";
 
 
 const theme = createTheme({
@@ -71,12 +72,28 @@ Hello, \\LaTeX!
 \\end{document}`;
 
     const phpCode = `<?php
-echo "Hello, World!";
-?>`;
+
+class Me {
+    private $name;
+    private $job;
+    private $university;
+
+    public function __construct() {
+        $this->name = "Nicolas Huber";
+        $this->job = "Backend Developer";
+        $this->university = "University of Zurich";
+    }
+
+    public function introduce() {
+        echo "I am {$this->name}, a master's student in computer science specializing in.";
+    }
+}
+`;
 
     const pythonCode = `print("Hello, World!")`;
 
-    const sqlCode = `SELECT * FROM users`;
+    const sqlCode = `SELECT * FROM skills`; // Skills
+
     const JSCode = `const App = props => {
   return (
     <div>
@@ -99,6 +116,7 @@ echo "Hello, World!";
                     <Typewriter sentences={about}></Typewriter>
                     <Button variant="contained" color="primary">Secondary</Button>
                     <Button variant="contained" color="secondary">Secondary</Button>
+                    <ProgrammingCode language="php" code={phpCode} />
 
 
                 </ParallaxLayer>
@@ -119,12 +137,11 @@ echo "Hello, World!";
                 >
                     <h1>Skills</h1>
                     <Skills></Skills>
-                    <ProgrammingCode language="javascript" code={JSCode} />
-                    <ProgrammingCode language="java" code={javaCode} />
-                    <ProgrammingCode language="latex" code={latexCode} />
-                    <ProgrammingCode language="php" code={phpCode} />
-                    <ProgrammingCode language="python" code={pythonCode} />
-                    <ProgrammingCode language="sql" code={sqlCode} />
+                    <TypedProgrammingCode language="javascript" code={JSCode} />
+                    <TypedProgrammingCode language="java" code={javaCode} />
+                    <TypedProgrammingCode language="latex" code={latexCode} />
+                    <TypedProgrammingCode language="python" code={pythonCode} />
+                    <TypedProgrammingCode language="sql" code={sqlCode} />
 
 
                 </ParallaxLayer>
