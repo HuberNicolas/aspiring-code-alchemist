@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import jokes from '../assets/jokes.json';
-import Button from "@mui/material/Button";
-import FlyingEmojis from "./FlyingEmojis.jsx";
+import Button from '@mui/material/Button';
+import FlyingEmojis from './FlyingEmojis';
 
 const Jokes = () => {
     const [randomJoke, setRandomJoke] = useState('');
     const [randomAuthor, setRandomAuthor] = useState('');
+    const [emojiType, setEmojiType] = useState('funny');
 
     useEffect(() => {
         loadJokes();
@@ -26,16 +27,32 @@ const Jokes = () => {
         loadJokes();
     };
 
+    const handleFunnyButtonClick = () => {
+        setEmojiType('funny');
+        loadJokes();
+    };
+
+    const handleNotFunnyButtonClick = () => {
+        setEmojiType('notFunny');
+        loadJokes();
+    };
+
     return (
         <>
             <div>
                 <p>{randomJoke}</p>
                 <p>- {randomAuthor}</p>
-                <Button variant="contained" color="primary" onClick={handleNextJokeClick}>Next Joke</Button>
-                <Button variant="contained" color="secondary" onClick={handleNextJokeClick}>Funny</Button>
-                <Button variant="contained" color="warning" onClick={handleNextJokeClick}>Not soo funny.</Button>
-                <FlyingEmojis />
+                <Button variant="contained" color="primary" onClick={handleNextJokeClick}>
+                    Next Joke
+                </Button>
+                <Button variant="contained" color="secondary" onClick={handleFunnyButtonClick}>
+                    Funny
+                </Button>
+                <Button variant="contained" color="warning" onClick={handleNotFunnyButtonClick}>
+                    Not so funny
+                </Button>
             </div>
+            <FlyingEmojis emojiType={emojiType} />
         </>
     );
 };
