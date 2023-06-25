@@ -18,6 +18,7 @@ import ProjectCard from "./components/ProjectCard.jsx";
 import {faGithub, faPython, faHtml5, faCss3, faReact, faJs, faSymfony, faDocker, faPhp, faJava, faLinux} from "@fortawesome/free-brands-svg-icons";
 import ProgrammingCode from "./components/ProgrammingCode.jsx";
 import CareerTimeline from "./components/CareerTimeline.jsx";
+import {Dna} from "react-loader-spinner";
 
 
 const theme = createTheme({

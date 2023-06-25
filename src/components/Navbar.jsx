@@ -9,6 +9,7 @@ import MergeIcon from '@mui/icons-material/Merge';
 import SendIcon from '@mui/icons-material/Send';
 
 import avatarImage from '../assets/profile.jpg';
+import {Dna} from "react-loader-spinner";
 
 const pages = [
     { title: 'Home', icon: <PersonIcon /> },
@@ -125,8 +126,18 @@ function Navbar() {
                                 </Button>
                             ))}
                         </Box>
+                        <Dna
+                            visible={true}
+                            height="80"
+                            width="80"
+                            ariaLabel="dna-loading"
+                            wrapperStyle={{}}
+                            wrapperClass="dna-wrapper"
+                        />
                     </Toolbar>
+
                 </Container>
+
             </AppBar>
         </>
     );
