@@ -183,6 +183,7 @@ Hello, \\LaTeX!
                 <ParallaxLayer offset={4} speed={0.8}>
                     <h1>Contact</h1>
                     <Contact></Contact>
+                    <Jokes></Jokes>
 
                 </ParallaxLayer>
                 <ParallaxLayer offset={4.8} speed={0.2}>

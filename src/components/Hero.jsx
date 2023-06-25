@@ -4,6 +4,7 @@ import ProgrammingCode from "./ProgrammingCode.jsx";
 import Jokes from "./Jokes.jsx";
 import heroImage from "../assets/hero-bg.png";
 import {Avatar} from "@mui/material";
+import './Typewriter.scss';
 import './Hero.scss';
 
 const about = ['Aspiring Code Alchemist','Intermediate Backend Maestro', 'Floorball Enthusiast', 'IT Security Practitioner'];
@@ -30,7 +31,10 @@ function Hero() {
 
     return (
         <>
-            <Typewriter sentences={about}></Typewriter>
+            <div className="typewriter-text" >
+                <p>Nicolas Huber</p>
+                <Typewriter sentences={about}></Typewriter>
+            </div>
             <div id="hero-container">
                 <Avatar alt="Nicolas Huber" src={heroImage} sx={{
                     marginRight: 10,
@@ -44,10 +48,6 @@ function Hero() {
                 <ProgrammingCode language="php" code={phpCode} />
 
             </div>
-            <Jokes></Jokes>
-
-            <Button variant="contained" color="primary">Secondary</Button>
-            <Button variant="contained" color="secondary">Secondary</Button>
         </>
     )
 }
