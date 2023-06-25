@@ -4,7 +4,7 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import SchoolIcon from '@mui/icons-material/School';
+import WorkHistory from '@mui/icons-material/WorkHistory';
 import {Typography} from "@mui/material";
 
 
@@ -16,38 +16,38 @@ function PersonalTimeline() {
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot  color="primary" variant="outlined">
-                            <SchoolIcon />
+                            <WorkHistory />
                         </TimelineDot>
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent>Education</TimelineContent>
+                    <TimelineContent>Career</TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineSeparator>
-                        <TimelineDot color="secondary" />
+                        <TimelineDot color="success" />
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
                         <Typography variant="h6">
-                            University of Zurich
+                            jkweb AG - Zurich
                         </Typography>
-                        <Typography>Msc Informatics</Typography>
-                        <Typography>Softwaresystems Major & Datascience Minor</Typography>
-                        <Typography variant="h7">(2022 - now)</Typography>
+                        <Typography>Junior Backend Developer</Typography>
+                        <Typography>part-time (20%)</Typography>
+                        <Typography variant="h7">(September 2021 - now)</Typography>
                     </TimelineContent>
                 </TimelineItem>
 
                 <TimelineItem>
                     <TimelineSeparator>
-                        <TimelineDot color="secondary" />
+                        <TimelineDot color="success" />
                     </TimelineSeparator>
                     <TimelineContent>
                         <Typography variant="h6">
-                            University of Zurich
+                            jkweb AG - Zurich
                         </Typography>
-                        <Typography>Bsc Informatics (magna cum laude)</Typography>
-                        <Typography>Softwaresystems Major & Business Informatics Minor</Typography>
-                        <Typography variant="h7">(2019 - 2022)</Typography>
+                        <Typography>Backend Developer</Typography>
+                        <Typography>Internship (full-time)</Typography>
+                        <Typography variant="h7">(June - September 2021)</Typography>
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>

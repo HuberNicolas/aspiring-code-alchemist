@@ -17,9 +17,13 @@ import Button from '@mui/material/Button';
 import ProjectCard from "./components/ProjectCard.jsx";
 import {faGithub, faPython, faHtml5, faCss3, faReact, faJs, faSymfony, faDocker, faPhp, faJava, faLinux} from "@fortawesome/free-brands-svg-icons";
 import ProgrammingCode from "./components/ProgrammingCode.jsx";
+import CareerTimeline from "./components/CareerTimeline.jsx";
 
 
 const theme = createTheme({
+    typography: {
+        fontFamily: 'JetBrains Mono'
+    },
 
     // background: $navy: #0a192f;
     palette: {
@@ -165,6 +169,7 @@ class Me {
                     <h1>Education</h1>
                     <Education></Education>
                     <PersonalTimeline></PersonalTimeline>
+                    <CareerTimeline></CareerTimeline>
                     <Resume></Resume>
 
                 </ParallaxLayer>
