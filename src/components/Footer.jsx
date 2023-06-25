@@ -40,7 +40,7 @@ function Footer() {
                     wrapperClass="dna-wrapper"
                 />
                 <Typography variant="h7" align="center">
-                    React based & made with ❤️ (aka Material UI).
+                    React based & made with ❤️ (aka. Material UI).
                 </Typography>
             </div>
         </div>
