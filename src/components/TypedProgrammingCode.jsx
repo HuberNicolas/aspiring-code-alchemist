@@ -37,7 +37,6 @@ function TypedProgrammingCode({ language, code }) {
 
     return (
         <div className="Code">
-            <h2>Code Syntax Block {language}</h2>
             <pre>
         <code ref={codeRef} className={`language-${language} preformatted`}></code>
       </pre>

@@ -19,6 +19,7 @@ import {faGithub, faPython, faHtml5, faCss3, faReact, faJs, faSymfony, faDocker,
 import ProgrammingCode from "./components/ProgrammingCode.jsx";
 import CareerTimeline from "./components/CareerTimeline.jsx";
 import {Dna} from "react-loader-spinner";
+import Footer from "./components/Footer.jsx";
 
 
 const theme = createTheme({
@@ -94,7 +95,7 @@ function App() {
 
     const ref = useRef();
 
-    const about = ['Aspiring Code Alchemist','Intermediate Backend Maestro', 'Floorball Enthusiast', 'IT Security Practitioner'];
+
     const javaCode = `public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -106,24 +107,6 @@ function App() {
 Hello, \\LaTeX!
 \\end{document}`;
 
-    const phpCode = `<?php
-
-class Me {
-    private $name;
-    private $job;
-    private $university;
-
-    public function __construct() {
-        $this->name = "Nicolas Huber";
-        $this->job = "Backend Developer";
-        $this->university = "University of Zurich";
-    }
-
-    public function introduce() {
-        echo "I am {$this->name}, a master's student in computer science specializing in.";
-    }
-}
-`;
 
     const pythonCode = `print("Hello, World!")`;
 
@@ -151,15 +134,9 @@ class Me {
     <>
         <ThemeProvider theme={theme}>
             <Navbar></Navbar>
-            <Parallax pages={4} ref={ref}>
+            <Parallax pages={5} ref={ref}>
                 <ParallaxLayer>
-                    <h1>Home</h1>
-                    <Jokes></Jokes>
                     <Hero></Hero>
-                    <Typewriter sentences={about}></Typewriter>
-                    <Button variant="contained" color="primary">Secondary</Button>
-                    <Button variant="contained" color="secondary">Secondary</Button>
-                    <ProgrammingCode language="php" code={phpCode} />
 
 
                 </ParallaxLayer>
@@ -183,11 +160,11 @@ class Me {
                     <Skills></Skills>
                     <Parallax className="container" pages={6} horizontal>
                         <Page offset={0} content={<TypedProgrammingCode language="sql" code={sqlCode} />}/>
-                        <Page offset={1} content={<TypedProgrammingCode language="javascript" code={JSCode} />}/>
-                        <Page offset={2} content={<TypedProgrammingCode language="java" code={javaCode} />}/>
-                        <Page offset={3} content={<TypedProgrammingCode language="latex" code={latexCode} />}/>
-                        <Page offset={4} content={<TypedProgrammingCode language="python" code={pythonCode} />}/>
-                        <Page offset={5}/>
+                        <Page offset={0.4} content={<TypedProgrammingCode language="javascript" code={JSCode} />}/>
+                        <Page offset={0.8} content={<TypedProgrammingCode language="java" code={javaCode} />}/>
+                        <Page offset={1.2} content={<TypedProgrammingCode language="latex" code={latexCode} />}/>
+                        <Page offset={1.6} content={<TypedProgrammingCode language="python" code={pythonCode} />}/>
+                        <Page offset={2}/>
                     </Parallax>
 
 
@@ -203,16 +180,16 @@ class Me {
 
 
                 </ParallaxLayer>
-                <ParallaxLayer offset={4} speed={0.3}>
+                <ParallaxLayer offset={4} speed={0.8}>
                     <h1>Contact</h1>
                     <Contact></Contact>
 
                 </ParallaxLayer>
-
-
-
-
+                <ParallaxLayer offset={4.8} speed={0.2}>
+                    <Footer></Footer>
+                </ParallaxLayer>
             </Parallax>
+
         </ThemeProvider>
     </>
   )
