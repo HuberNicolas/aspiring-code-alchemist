@@ -158,7 +158,10 @@ Hello, \\LaTeX!
                 >
                     <h1>Skills</h1>
                     <Skills></Skills>
-                    <SkillChart></SkillChart>
+                    <SkillChart percentage={75} label="PHP" />
+                    <SkillChart percentage={80} label="Python" />
+                    <SkillChart percentage={40} label="Python" />
+
                     <Parallax className="container" pages={6} horizontal>
                         <Page offset={0} content={<TypedProgrammingCode language="sql" code={sqlCode} />}/>
                         <Page offset={0.4} content={<TypedProgrammingCode language="javascript" code={JSCode} />}/>
