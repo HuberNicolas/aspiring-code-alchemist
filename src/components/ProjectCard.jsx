@@ -2,11 +2,10 @@ import "./ProjcetCard.scss";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, CardActions } from '@mui/material';
+import {CardActionArea, CardActions, Chip, Stack} from '@mui/material';
 import Button from "@mui/material/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faPython } from "@fortawesome/free-brands-svg-icons";
+import FaceIcon from '@mui/icons-material/Face';
 
 export default function ProjectCard(props) {
     const { name, description, skills, repoLink } = props;
@@ -38,6 +37,11 @@ export default function ProjectCard(props) {
                         <Button>Repository</Button>
                     </a>
                 </CardActions>
+                <Stack direction="row" spacing={1}>
+                    <Chip icon={<FaceIcon />} label="primary" color="primary" />
+                    <Chip icon={<FaceIcon />} label="secondary" color="secondary" />
+                    <Chip icon={<FaceIcon />} label="success" color="success" />
+                </Stack>
             </CardActionArea>
         </Card>
     );

@@ -15,7 +15,7 @@ import { createTheme } from '@mui/material/styles';
 import {ThemeProvider} from "@mui/material";
 import Button from '@mui/material/Button';
 import ProjectCard from "./components/ProjectCard.jsx";
-import {faGithub, faPython} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faPython, faHtml5, faCss3, faReact, faJs, faSymfony, faDocker, faPhp, faJava, faLinux} from "@fortawesome/free-brands-svg-icons";
 import ProgrammingCode from "./components/ProgrammingCode.jsx";
 
 
@@ -42,16 +42,46 @@ const theme = createTheme({
 
 const projects = [
     {
-        name: 'Project 1',
+        name: 'Aspiring Code Alchemist Portfolio',
         description: 'This is the first project',
-        skills: [faPython, faGithub],
-        repoLink: 'https://github.com/project1'
+        skills: [faReact, faJs, faHtml5, faCss3],
+        repoLink: 'https://github.com/HuberNicolas/aspiring-code-alchemist'
     },
     {
-        name: 'Project 2',
+        name: 'ComBaCal',
+        description: 'This is the first project',
+        skills: [faPhp, faSymfony, faReact, faJs, faHtml5, faCss3, faDocker],
+        repoLink: 'https://github.com/orgs/combacal/repositories'
+    },
+    {
+        name: 'OKCupid - Visual Data Analysis',
+        description: 'This is the second project',
+        skills: [faPython, faReact],
+        repoLink: 'https://github.com/orgs/ivda-hs22-group-nvwd/repositories'
+    },
+    {
+        name: 'MTD Stratety Selection Agent',
         description: 'This is the second project',
         skills: [faPython],
-        repoLink: 'https://github.com/project2'
+        repoLink: 'https://github.com/HuberNicolas/MTDStrategySelectionAgent'
+    },
+    {
+        name: 'Heart Disease - Data Analysis',
+        description: 'This is the second project',
+        skills: [faPython, faLinux],
+        repoLink: 'https://github.com/HuberNicolas/heart-disease'
+    },
+    {
+        name: 'Pokemon Tower Defense',
+        description: 'This is the second project',
+        skills: [faJava, faReact, faJs, faHtml5, faCss3],
+        repoLink: 'https://github.com/orgs/sopra-fs21-group-10/repositories'
+    },
+    {
+        name: 'Numerical Methods - MATLAB implementations',
+        description: 'This is the second project',
+        skills: [],
+        repoLink: 'https://github.com/HuberNicolas/numerical-methods'
     }
 ];
 
