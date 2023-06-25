@@ -15,7 +15,7 @@ function PersonalTimeline() {
             <Timeline position="alternate">
                 <TimelineItem>
                     <TimelineSeparator>
-                        <TimelineDot  color="primary" variant="outlined">
+                        <TimelineDot  color="warning" variant="outlined">
                             <WorkHistory />
                         </TimelineDot>
                         <TimelineConnector />
@@ -24,30 +24,26 @@ function PersonalTimeline() {
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineSeparator>
-                        <TimelineDot color="success" />
+                        <TimelineDot color="warning" />
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Typography variant="h6">
-                            jkweb AG - Zurich
-                        </Typography>
-                        <Typography>Junior Backend Developer</Typography>
-                        <Typography>part-time (20%)</Typography>
+                        <Typography variant="h5">jkweb AG - Zurich</Typography>
                         <Typography variant="h7">(September 2021 - now)</Typography>
+                        <Typography variant="h6">Junior Backend Developer</Typography>
+                        <Typography variant="h6">part-time (20%)</Typography>
                     </TimelineContent>
                 </TimelineItem>
 
                 <TimelineItem>
                     <TimelineSeparator>
-                        <TimelineDot color="success" />
+                        <TimelineDot color="warning" />
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Typography variant="h6">
-                            jkweb AG - Zurich
-                        </Typography>
-                        <Typography>Backend Developer</Typography>
-                        <Typography>Internship (full-time)</Typography>
+                        <Typography variant="h5">jkweb AG - Zurich</Typography>
                         <Typography variant="h7">(June - September 2021)</Typography>
+                        <Typography variant="h6">Backend Developer</Typography>
+                        <Typography variant="h6">Internship (full-time)</Typography>
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>

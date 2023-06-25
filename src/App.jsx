@@ -144,7 +144,6 @@ Hello, \\LaTeX!
                     offset={1}
                     onClick={() => ref.current.scrollTo(3)}
                 >
-                    <h1>Education</h1>
                     <Education></Education>
                     <PersonalTimeline></PersonalTimeline>
                     <CareerTimeline></CareerTimeline>
