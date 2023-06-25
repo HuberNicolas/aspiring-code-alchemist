@@ -62,13 +62,13 @@ const projects = [
     {
         name: 'MTD Stratety Selection Agent',
         description: 'This is the second project',
-        skills: [faPython],
+        skills: [faPython, faLinux],
         repoLink: 'https://github.com/HuberNicolas/MTDStrategySelectionAgent'
     },
     {
         name: 'Heart Disease - Data Analysis',
         description: 'This is the second project',
-        skills: [faPython, faLinux],
+        skills: [faPython],
         repoLink: 'https://github.com/HuberNicolas/heart-disease'
     },
     {
@@ -134,10 +134,10 @@ class Me {
 };
 `;
 
-    const Page = ({ offset, code }) => (
+    const Page = ({ offset, content }) => (
         <>
             <ParallaxLayer offset={offset} speed={0.6}>
-                {code}
+                {content}
             </ParallaxLayer>
         </>
     );
@@ -176,11 +176,11 @@ class Me {
                     <h1>Skills</h1>
                     <Skills></Skills>
                     <Parallax className="container" pages={6} horizontal>
-                        <Page offset={0} code={<TypedProgrammingCode language="sql" code={sqlCode} />}/>
-                        <Page offset={1} code={<TypedProgrammingCode language="javascript" code={JSCode} />}/>
-                        <Page offset={2} code={<TypedProgrammingCode language="java" code={javaCode} />}/>
-                        <Page offset={3} code={<TypedProgrammingCode language="latex" code={latexCode} />}/>
-                        <Page offset={4} code={<TypedProgrammingCode language="python" code={pythonCode} />}/>
+                        <Page offset={0} content={<TypedProgrammingCode language="sql" code={sqlCode} />}/>
+                        <Page offset={1} content={<TypedProgrammingCode language="javascript" code={JSCode} />}/>
+                        <Page offset={2} content={<TypedProgrammingCode language="java" code={javaCode} />}/>
+                        <Page offset={3} content={<TypedProgrammingCode language="latex" code={latexCode} />}/>
+                        <Page offset={4} content={<TypedProgrammingCode language="python" code={pythonCode} />}/>
                         <Page offset={5}/>
                     </Parallax>
 
@@ -189,9 +189,12 @@ class Me {
                 <ParallaxLayer offset={3} speed={0.75}>
                     <h1>Projects</h1>
                     <Projects></Projects>
-                    {projects.map((project, index) => (
-                        <ProjectCard key={index} {...project} />
-                    ))}
+                    <Parallax className="container" pages={projects.length} horizontal>
+                        {projects.map((project, index) => (
+                            <Page offset={index} content={<ProjectCard key={index} {...project} />} />
+                        ))}
+                    </Parallax>
+
 
                 </ParallaxLayer>
                 <ParallaxLayer offset={4} speed={0.3}>
