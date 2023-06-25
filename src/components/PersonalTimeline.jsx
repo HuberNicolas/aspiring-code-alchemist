@@ -15,7 +15,7 @@ function PersonalTimeline() {
             <Timeline position="alternate">
                 <TimelineItem>
                     <TimelineSeparator>
-                        <TimelineDot  color="primary" variant="outlined">
+                        <TimelineDot  color="secondary" variant="outlined">
                             <SchoolIcon />
                         </TimelineDot>
                         <TimelineConnector />
@@ -28,12 +28,11 @@ function PersonalTimeline() {
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Typography variant="h6">
-                            University of Zurich
-                        </Typography>
-                        <Typography>Msc Informatics</Typography>
-                        <Typography>Softwaresystems Major & Datascience Minor</Typography>
+                        <Typography variant="h5">University of Zurich</Typography>
                         <Typography variant="h7">(2022 - now)</Typography>
+                        <Typography variant="h5">Msc Informatics</Typography>
+                        <Typography variant="h5">Softwaresystems Major & Datascience Minor</Typography>
+
                     </TimelineContent>
                 </TimelineItem>
 
@@ -42,12 +41,10 @@ function PersonalTimeline() {
                         <TimelineDot color="secondary" />
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Typography variant="h6">
-                            University of Zurich
-                        </Typography>
-                        <Typography>Bsc Informatics (magna cum laude)</Typography>
-                        <Typography>Softwaresystems Major & Business Informatics Minor</Typography>
+                        <Typography variant="h5">University of Zurich</Typography>
                         <Typography variant="h7">(2019 - 2022)</Typography>
+                        <Typography variant="h5">Bsc Informatics</Typography>
+                        <Typography variant="h5">Softwaresystems Major & Business Informatics Minor</Typography>
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
