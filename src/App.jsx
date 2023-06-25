@@ -104,6 +104,14 @@ class Me {
 };
 `;
 
+    const Page = ({ offset, code }) => (
+        <>
+            <ParallaxLayer offset={offset} speed={0.6}>
+                {code}
+            </ParallaxLayer>
+        </>
+    );
+
     return (
     <>
         <ThemeProvider theme={theme}>
@@ -137,11 +145,14 @@ class Me {
                 >
                     <h1>Skills</h1>
                     <Skills></Skills>
-                    <TypedProgrammingCode language="javascript" code={JSCode} />
-                    <TypedProgrammingCode language="java" code={javaCode} />
-                    <TypedProgrammingCode language="latex" code={latexCode} />
-                    <TypedProgrammingCode language="python" code={pythonCode} />
-                    <TypedProgrammingCode language="sql" code={sqlCode} />
+                    <Parallax className="container" pages={6} horizontal>
+                        <Page offset={0} code={<TypedProgrammingCode language="sql" code={sqlCode} />}/>
+                        <Page offset={1} code={<TypedProgrammingCode language="javascript" code={JSCode} />}/>
+                        <Page offset={2} code={<TypedProgrammingCode language="java" code={javaCode} />}/>
+                        <Page offset={3} code={<TypedProgrammingCode language="latex" code={latexCode} />}/>
+                        <Page offset={4} code={<TypedProgrammingCode language="python" code={pythonCode} />}/>
+                        <Page offset={5}/>
+                    </Parallax>
 
 
                 </ParallaxLayer>
