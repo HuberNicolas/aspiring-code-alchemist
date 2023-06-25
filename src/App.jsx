@@ -20,6 +20,7 @@ import ProgrammingCode from "./components/ProgrammingCode.jsx";
 import CareerTimeline from "./components/CareerTimeline.jsx";
 import {Dna} from "react-loader-spinner";
 import Footer from "./components/Footer.jsx";
+import SkillChart from "./components/SkillChart.jsx";
 
 
 const theme = createTheme({
@@ -157,6 +158,7 @@ Hello, \\LaTeX!
                 >
                     <h1>Skills</h1>
                     <Skills></Skills>
+                    <SkillChart></SkillChart>
                     <Parallax className="container" pages={6} horizontal>
                         <Page offset={0} content={<TypedProgrammingCode language="sql" code={sqlCode} />}/>
                         <Page offset={0.4} content={<TypedProgrammingCode language="javascript" code={JSCode} />}/>
