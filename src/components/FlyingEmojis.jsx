@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import {Grow, Typography} from '@mui/material';
 
 const FlyingEmojis = ({ emojiType }) => {

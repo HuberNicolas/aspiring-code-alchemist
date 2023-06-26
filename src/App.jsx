@@ -1,15 +1,12 @@
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
-import Contact from "./components/Contact.jsx";
-import Jokes from "./components/Jokes.jsx";
 import Resume from "./components/Resume.jsx";
 import Projects from "./components/Projects.jsx";
 import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 import {useRef} from "react";
 import {createTheme} from '@mui/material/styles';
 import {ThemeProvider, Typography} from "@mui/material";
-import Footer from "./components/Footer.jsx";
 import About from "./components/About.jsx";
 
 

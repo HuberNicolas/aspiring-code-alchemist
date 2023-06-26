@@ -1,4 +1,3 @@
-import React from 'react';
 import {Typography} from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import PersonIcon from '@mui/icons-material/Person';

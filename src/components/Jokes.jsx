@@ -2,10 +2,7 @@ import {useEffect, useState} from 'react';
 import jokes from '../assets/jokes.json';
 import Button from '@mui/material/Button';
 import FlyingEmojis from './FlyingEmojis';
-import {Avatar, Grid} from "@mui/material";
-import PersonalInfoCard from "./PersonalInfoCard.jsx";
-import profileImage from "../assets/profile.jpg";
-import Contact from "./Contact.jsx";
+import {Grid} from "@mui/material";
 
 const Jokes = () => {
     const [randomJoke, setRandomJoke] = useState('');
