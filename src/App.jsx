@@ -12,7 +12,7 @@ import TypedProgrammingCode from "./components/TypedProgrammingCode.jsx";
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import {useRef} from "react";
 import { createTheme } from '@mui/material/styles';
-import {ThemeProvider} from "@mui/material";
+import {Grid, ThemeProvider} from "@mui/material";
 import Button from '@mui/material/Button';
 import ProjectCard from "./components/ProjectCard.jsx";
 import {faGithub, faPython, faHtml5, faCss3, faReact, faJs, faSymfony, faDocker, faPhp, faJava, faLinux} from "@fortawesome/free-brands-svg-icons";
@@ -191,13 +191,13 @@ Hello, \\LaTeX!
                 <ParallaxLayer offset={3} speed={0.75}>
                     <h1>Projects</h1>
                     <Projects></Projects>
-                    <Parallax className="container" pages={projects.length} horizontal>
+                    <Grid container spacing={2}>
                         {projects.map((project, index) => (
-                            <Page offset={index} content={<ProjectCard key={index} {...project} />} />
+                            <Grid item key={index} xs={6} sm={4} md={3}>
+                                <ProjectCard key={index} {...project} />
+                            </Grid>
                         ))}
-                    </Parallax>
-
-
+                    </Grid>
                 </ParallaxLayer>
                 <ParallaxLayer offset={4} speed={0.8}>
                     <h1>Contact</h1>
