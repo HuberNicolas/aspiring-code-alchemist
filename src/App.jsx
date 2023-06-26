@@ -98,7 +98,7 @@ function App() {
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             <Button
                                 key="Resume"
-                                onClick={() => ref.current.scrollTo(1)}
+                                onClick={() => ref.current.scrollTo(1.2)}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -110,7 +110,7 @@ function App() {
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             <Button
                                 key="Skills"
-                                onClick={() => ref.current.scrollTo(2)}
+                                onClick={() => ref.current.scrollTo(2.2)}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -122,7 +122,7 @@ function App() {
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             <Button
                                 key="Projects"
-                                onClick={() => ref.current.scrollTo(3)}
+                                onClick={() => ref.current.scrollTo(4.1)}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -134,7 +134,7 @@ function App() {
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             <Button
                                 key="About"
-                                onClick={() => ref.current.scrollTo(4)}
+                                onClick={() => ref.current.scrollTo(5.2)}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -146,12 +146,17 @@ function App() {
                     </Toolbar>
                 </Container>
             </AppBar>
-            <Parallax pages={5} ref={ref}>
-                <ParallaxLayer>
+            <Parallax
+                pages={6.5}
+                ref={ref}
+            >
+                <ParallaxLayer
+                    offset={0}
+                >
                     <Hero></Hero>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={1}
+                    offset={1.25}
                     speed={0.3}
                 >
                     <Typography
@@ -170,8 +175,8 @@ function App() {
                     <Resume></Resume>
                 </ParallaxLayer>
                 <ParallaxLayer
-                    offset={2}
-                    speed={0.5}
+                    offset={2.5}
+                    speed={0.8}
                 >
                     <Typography
                         variant="h2"
@@ -188,7 +193,10 @@ function App() {
                     </Typography>
                     <Skills></Skills>
                 </ParallaxLayer>
-                <ParallaxLayer offset={3.5} speed={0.8}>
+                <ParallaxLayer
+                    offset={4.25}
+                    speed={1}
+                >
                     <Typography
                         variant="h2"
                         align="center"
@@ -204,7 +212,7 @@ function App() {
                     </Typography>
                     <Projects></Projects>
                 </ParallaxLayer>
-                <ParallaxLayer offset={4} speed={1}>
+                <ParallaxLayer offset={5.25} speed={0.1}>
                     <Typography
                         variant="h2"
                         align="center"
