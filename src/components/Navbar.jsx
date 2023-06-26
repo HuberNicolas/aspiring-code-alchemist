@@ -17,8 +17,8 @@ const pages = [
     { title: 'Education', icon: <SchoolIcon /> },
     { title: 'Skills', icon: <TerminalIcon/> },
     { title: 'Projects', icon: <MergeIcon/> },
+    { title: 'About', icon: <PersonIcon/>},
     { title: 'Contact', icon: <SendIcon/> },
-    { title: 'About', icon: <PersonIcon/>}
 ];
 
 function Navbar() {

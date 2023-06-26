@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import jokes from '../assets/jokes.json';
 import Button from '@mui/material/Button';
 import FlyingEmojis from './FlyingEmojis';
@@ -6,7 +6,7 @@ import FlyingEmojis from './FlyingEmojis';
 const Jokes = () => {
     const [randomJoke, setRandomJoke] = useState('');
     const [randomAuthor, setRandomAuthor] = useState('');
-    const [emojiType, setEmojiType] = useState('funny');
+    const [emojiType, setEmojiType] = useState('notFunny');
 
     useEffect(() => {
         loadJokes();

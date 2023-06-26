@@ -8,6 +8,7 @@ import 'prismjs/components/prism-latex.js'
 import 'prismjs/components/prism-java.js'
 import 'prismjs/components/prism-php.js'
 import 'prismjs/components/prism-markup-templating.js'
+import 'prismjs/components/prism-jsx.js'
 import Typed from "typed.js";
 
 function TypedProgrammingCode({ language, code }) {
@@ -17,7 +18,7 @@ function TypedProgrammingCode({ language, code }) {
     useEffect(() => {
         const options = {
             strings: [code],
-            typeSpeed: 50,
+            typeSpeed: 1,
             showCursor: false,
             startDelay: 1000,
             smartBackspace: true,
