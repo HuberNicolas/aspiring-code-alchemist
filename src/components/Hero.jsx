@@ -6,6 +6,7 @@ import heroImage from "../assets/hero-bg.png";
 import {Avatar} from "@mui/material";
 import './Typewriter.scss';
 import './Hero.scss';
+import {ProgressBar} from "react-loader-spinner";
 
 const about = ['Aspiring Code Alchemist', 'Floorball Enthusiast', 'IT Security Practitioner'];
 const phpCode = `<?php
@@ -55,8 +56,16 @@ function Hero() {
                     borderBottomRightRadius: '15%',
                 }}/>
                 <ProgrammingCode language="php" code={phpCode} />
-
             </div>
+            <ProgressBar
+                height="80"
+                width="full"
+                ariaLabel="progress-bar-loading"
+                wrapperStyle={{}}
+                wrapperClass="progress-bar-wrapper"
+                borderColor = '#00bcd4'
+                barColor = '#009688'
+            />
         </>
     )
 }
