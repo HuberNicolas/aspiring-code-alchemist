@@ -7,7 +7,7 @@ import {Avatar} from "@mui/material";
 import './Typewriter.scss';
 import './Hero.scss';
 
-const about = ['Aspiring Code Alchemist','Intermediate Backend Maestro', 'Floorball Enthusiast', 'IT Security Practitioner'];
+const about = ['Aspiring Code Alchemist', 'Floorball Enthusiast', 'IT Security Practitioner'];
 const phpCode = `<?php
 
 class Me {
@@ -21,9 +21,18 @@ class Me {
         $this->university = "University of Zurich";
     }
 
-    public function introduce() {
-        echo "I am {$this->name}, a master's student
-        in computer science.";
+    public function welcome() {
+        echo "Hi there. My name is {$this->name},
+        and I'm a Intermediate Backend Maestro
+        who has a great passion about coding."
+    }
+    
+    public function introduce(ManagerRegistry $doctrine) {
+        $entityManager = $doctrine->getManager();
+        $academicHistory = $entityManager->getRepository(Degree::class)->findBy([], ['$gradDate' => 'DES']);
+        $careerPath = $entityManager->getRepository(Career::class)->findBy([], ['$startDate' => 'DES']);
+        $skills = $entityManager->getRepository(Skills::class)->findAllGroupedByArea();
+        $interests = $entityManager->getRepository(Interests::class)->findAll();
     }
 }
 `;
