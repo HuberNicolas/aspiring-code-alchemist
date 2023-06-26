@@ -39,7 +39,7 @@ const PersonalInfoCard = () => {
                     Le me in a nutshell 🌰
                 </Typography>
                 <Typography sx={{ marginBottom: '2rem' }}>
-                    Mastering informatics & data science at UZH while moonlighting at jkweb, I navigate the backend realm, ensure smooth app testing, and occasionally sprinkle knowledge on apprentice minds at BBC Bern.
+                    Mastering informatics & data science at UZH while moonlighting at jkweb, I navigate the backend realm, ensure smooth app testing, and occasionally sprinkle knowledge on apprentice minds at BBC Bern
                 </Typography>
             </CardContent>
         </Card>
