@@ -27,7 +27,6 @@ import MergeIcon from '@mui/icons-material/Merge';
 import SchoolIcon from "@mui/icons-material/School";
 
 import avatarImage from './assets/profile.jpg';
-import AdbIcon from "@mui/icons-material/Adb";
 
 
 const theme = createTheme({
@@ -83,24 +82,6 @@ function App() {
                             }}
                         >
                             Nicolas Huber
-                        </Typography>
-                        <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-                        <Typography
-                            variant="h5"
-                            noWrap
-                            component="a"
-                            href=""
-                            sx={{
-                                mr: 2,
-                                display: { xs: 'flex', md: 'none' },
-                                flexGrow: 1,
-                                fontWeight: 700,
-                                letterSpacing: '.3rem',
-                                color: 'inherit',
-                                textDecoration: 'none',
-                            }}
-                        >
-                            Logo
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             <Button
@@ -171,7 +152,6 @@ function App() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1}
-                    onClick={() => ref.current.scrollTo(4)}
                 >
                     <Typography
                         variant="h2"
