@@ -48,6 +48,56 @@ const theme = createTheme({
     },
 });
 
+
+const javaCode = `public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}`;
+
+const latexCode = `\\documentclass{article}
+\\begin{document}
+Hello, \\LaTeX!
+\\end{document}`;
+
+
+const pythonCode = `print("Hello, World!")`;
+
+const sqlCode = `SELECT * FROM skills`; // Skills
+
+const jsCode = `const App = props => {
+  return (
+    <div>
+      <h1> Prism JS </h1>
+      <div>Awesome Syntax Highlighter</div>
+    </div>
+  );
+};
+`;
+
+const programming = [
+    {
+        code: javaCode,
+        language: 'Java'
+    },
+    {
+        code: latexCode,
+        language: 'LaTeX'
+    },
+    {
+        code: pythonCode,
+        language: 'Python'
+    },
+    {
+        code: sqlCode,
+        language: 'SQL'
+    },
+    {
+        code: jsCode,
+        language: 'Java Script'
+    },
+]
+
 const projects = [
     {
         name: 'Aspiring Code Alchemist Portfolio',
@@ -116,33 +166,6 @@ function App() {
 
     const ref = useRef();
 
-
-    const javaCode = `public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}`;
-
-    const latexCode = `\\documentclass{article}
-\\begin{document}
-Hello, \\LaTeX!
-\\end{document}`;
-
-
-    const pythonCode = `print("Hello, World!")`;
-
-    const sqlCode = `SELECT * FROM skills`; // Skills
-
-    const JSCode = `const App = props => {
-  return (
-    <div>
-      <h1> Prism JS </h1>
-      <div>Awesome Syntax Highlighter</div>
-    </div>
-  );
-};
-`;
-
     const Page = ({ offset, content }) => (
         <>
             <ParallaxLayer offset={offset} speed={0.6}>
@@ -186,15 +209,13 @@ Hello, \\LaTeX!
                         ))}
                     </Grid>
 
-                    <Parallax className="container" pages={6} horizontal>
-                        <Page offset={0} content={<TypedProgrammingCode language="sql" code={sqlCode} />}/>
-                        <Page offset={0.4} content={<TypedProgrammingCode language="javascript" code={JSCode} />}/>
-                        <Page offset={0.8} content={<TypedProgrammingCode language="java" code={javaCode} />}/>
-                        <Page offset={1.2} content={<TypedProgrammingCode language="latex" code={latexCode} />}/>
-                        <Page offset={1.6} content={<TypedProgrammingCode language="python" code={pythonCode} />}/>
-                        <Page offset={2}/>
-                    </Parallax>
-
+                    <Grid container spacing={2}>
+                        {programming.map((programming, index) => (
+                            <Grid item key={index} xs={6} sm={4} md={3}>
+                                <TypedProgrammingCode language={programming.language} code={programming.code} />
+                            </Grid>
+                        ))}
+                    </Grid>
 
                 </ParallaxLayer>
                 <ParallaxLayer offset={3} speed={0.75}>
