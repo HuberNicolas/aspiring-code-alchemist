@@ -7,7 +7,6 @@ import PersonIcon from '@mui/icons-material/Person';
 import HomeIcon from '@mui/icons-material/House';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import MergeIcon from '@mui/icons-material/Merge';
-import SendIcon from '@mui/icons-material/Send';
 
 import avatarImage from '../assets/profile.jpg';
 
@@ -17,7 +16,6 @@ const pages = [
     { title: 'Skills', icon: <TerminalIcon/> },
     { title: 'Projects', icon: <MergeIcon/> },
     { title: 'About', icon: <PersonIcon/>},
-    { title: 'Contact', icon: <SendIcon/> },
 ];
 
 function Navbar() {

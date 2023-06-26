@@ -1,13 +1,33 @@
-import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
 import Resume from "./components/Resume.jsx";
 import Projects from "./components/Projects.jsx";
-import {Parallax, ParallaxLayer} from '@react-spring/parallax'
-import {useRef} from "react";
-import {createTheme} from '@mui/material/styles';
-import {ThemeProvider, Typography} from "@mui/material";
 import About from "./components/About.jsx";
+import {Parallax, ParallaxLayer} from '@react-spring/parallax'
+import React, {useRef} from "react";
+import {createTheme} from '@mui/material/styles';
+import {
+    AppBar,
+    Avatar,
+    Box,
+    Button,
+    Container,
+    IconButton,
+    Menu,
+    MenuItem,
+    ThemeProvider,
+    Toolbar,
+    Typography
+} from "@mui/material";
+
+import PersonIcon from '@mui/icons-material/Person';
+import HomeIcon from '@mui/icons-material/House';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import MergeIcon from '@mui/icons-material/Merge';
+import SchoolIcon from "@mui/icons-material/School";
+
+import avatarImage from './assets/profile.jpg';
+import AdbIcon from "@mui/icons-material/Adb";
 
 
 const theme = createTheme({
@@ -41,13 +61,117 @@ function App() {
     return (
     <>
         <ThemeProvider theme={theme}>
-            <Navbar></Navbar>
+            <AppBar position="static"
+            >
+                <Container maxWidth="xl">
+                    <Toolbar disableGutters>
+                        <Avatar alt="Nicolas Huber" src={avatarImage} sx={{
+                            marginRight: 10
+                        }}/>
+                        <Typography
+                            variant="h6"
+                            noWrap
+                            component="a"
+                            href="/"
+                            sx={{
+                                mr: 2,
+                                display: { xs: 'none', md: 'flex' },
+                                fontWeight: 700,
+                                letterSpacing: '.3rem',
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            Nicolas Huber
+                        </Typography>
+                        <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                        <Typography
+                            variant="h5"
+                            noWrap
+                            component="a"
+                            href=""
+                            sx={{
+                                mr: 2,
+                                display: { xs: 'flex', md: 'none' },
+                                flexGrow: 1,
+                                fontWeight: 700,
+                                letterSpacing: '.3rem',
+                                color: 'inherit',
+                                textDecoration: 'none',
+                            }}
+                        >
+                            Logo
+                        </Typography>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                            <Button
+                                key="Home"
+                                onClick={() => ref.current.scrollTo(0)}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                                    <HomeIcon></HomeIcon>
+                                    <Typography>Home</Typography>
+                                </Box>
+                            </Button>
+                        </Box>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                            <Button
+                                key="Resume"
+                                onClick={() => ref.current.scrollTo(1)}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                                    <SchoolIcon />
+                                    <Typography>Resume</Typography>
+                                </Box>
+                            </Button>
+                        </Box>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                            <Button
+                                key="Skills"
+                                onClick={() => ref.current.scrollTo(2)}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                                    <TerminalIcon/>
+                                    <Typography>Skills</Typography>
+                                </Box>
+                            </Button>
+                        </Box>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                            <Button
+                                key="Projects"
+                                onClick={() => ref.current.scrollTo(3)}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                                    <MergeIcon/>
+                                    <Typography>Projects</Typography>
+                                </Box>
+                            </Button>
+                        </Box>
+                        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                            <Button
+                                key="About"
+                                onClick={() => ref.current.scrollTo(4)}
+                                sx={{ my: 2, color: 'white', display: 'block' }}
+                            >
+                                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                                    <PersonIcon></PersonIcon>
+                                    <Typography>About</Typography>
+                                </Box>
+                            </Button>
+                        </Box>
+                    </Toolbar>
+                </Container>
+            </AppBar>
             <Parallax pages={5} ref={ref}>
                 <ParallaxLayer>
                     <Hero></Hero>
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1}
+                    onClick={() => ref.current.scrollTo(4)}
                 >
                     <Typography
                         variant="h2"
