@@ -173,9 +173,13 @@ Hello, \\LaTeX!
                 >
                     <h1>Skills</h1>
                     <Skills></Skills>
-                    {skills.map((skill) => (
-                        <SkillChart percentage={skill.percentage} label={skill.skill} />
-                    ))}
+                    <Grid container spacing={2}>
+                        {skills.map((skill, index) => (
+                            <Grid item key={index} xs={6} sm={4} md={3}>
+                                <SkillChart percentage={skill.percentage} label={skill.skill} />
+                            </Grid>
+                        ))}
+                    </Grid>
 
                     <Parallax className="container" pages={6} horizontal>
                         <Page offset={0} content={<TypedProgrammingCode language="sql" code={sqlCode} />}/>

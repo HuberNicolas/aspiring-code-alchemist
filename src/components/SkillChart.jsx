@@ -26,7 +26,7 @@ const SkillChart = ({ percentage, label }) => {
                 height: 250,
                 type: 'radialBar',
                 toolbar: {
-                    show: true
+                    show: false
                 }
             },
             plotOptions: {
