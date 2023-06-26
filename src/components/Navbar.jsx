@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SchoolIcon from '@mui/icons-material/School';
 import AdbIcon from '@mui/icons-material/Adb';
 import PersonIcon from '@mui/icons-material/Person';
+import HomeIcon from '@mui/icons-material/House';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import MergeIcon from '@mui/icons-material/Merge';
 import SendIcon from '@mui/icons-material/Send';
@@ -12,11 +13,12 @@ import avatarImage from '../assets/profile.jpg';
 import {Dna} from "react-loader-spinner";
 
 const pages = [
-    { title: 'Home', icon: <PersonIcon /> },
+    { title: 'Home', icon: <HomeIcon /> },
     { title: 'Education', icon: <SchoolIcon /> },
     { title: 'Skills', icon: <TerminalIcon/> },
     { title: 'Projects', icon: <MergeIcon/> },
-    { title: 'Contact', icon: <SendIcon/> }
+    { title: 'Contact', icon: <SendIcon/> },
+    { title: 'About', icon: <PersonIcon/>}
 ];
 
 function Navbar() {

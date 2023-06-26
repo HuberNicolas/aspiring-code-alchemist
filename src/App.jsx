@@ -21,6 +21,7 @@ import CareerTimeline from "./components/CareerTimeline.jsx";
 import {Dna} from "react-loader-spinner";
 import Footer from "./components/Footer.jsx";
 import SkillChart from "./components/SkillChart.jsx";
+import About from "./components/About.jsx";
 
 
 const theme = createTheme({
@@ -154,7 +155,7 @@ Hello, \\LaTeX!
     <>
         <ThemeProvider theme={theme}>
             <Navbar></Navbar>
-            <Parallax pages={5} ref={ref}>
+            <Parallax pages={6} ref={ref}>
                 <ParallaxLayer>
                     <Hero></Hero>
 
@@ -208,12 +209,16 @@ Hello, \\LaTeX!
                     </Grid>
                 </ParallaxLayer>
                 <ParallaxLayer offset={4} speed={0.8}>
+                    <h1>About</h1>
+                    <About></About>
+                </ParallaxLayer>
+                <ParallaxLayer offset={5} speed={0.8}>
                     <h1>Contact</h1>
                     <Contact></Contact>
                     <Jokes></Jokes>
 
                 </ParallaxLayer>
-                <ParallaxLayer offset={4.8} speed={0.2}>
+                <ParallaxLayer offset={5.8} speed={0.2}>
                     <Footer></Footer>
                 </ParallaxLayer>
             </Parallax>
