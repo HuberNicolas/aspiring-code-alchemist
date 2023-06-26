@@ -152,6 +152,7 @@ function App() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1}
+                    speed={0.3}
                 >
                     <Typography
                         variant="h2"
@@ -187,7 +188,7 @@ function App() {
                     </Typography>
                     <Skills></Skills>
                 </ParallaxLayer>
-                <ParallaxLayer offset={3} speed={0.75}>
+                <ParallaxLayer offset={3.5} speed={0.8}>
                     <Typography
                         variant="h2"
                         align="center"
@@ -203,7 +204,7 @@ function App() {
                     </Typography>
                     <Projects></Projects>
                 </ParallaxLayer>
-                <ParallaxLayer offset={4} speed={0.8}>
+                <ParallaxLayer offset={4} speed={1}>
                     <Typography
                         variant="h2"
                         align="center"
