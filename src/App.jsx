@@ -91,6 +91,21 @@ const projects = [
         repoLink: 'https://github.com/HuberNicolas/numerical-methods'
     }
 ];
+const skills = [
+    {
+        skill: 'PHP',
+        percentage: 80
+    },
+    {
+        skill: 'Python',
+        percentage: 70
+    },
+    {
+        skill: 'SQL',
+        percentage: 60
+    },
+
+];
 
 function App() {
 
@@ -158,9 +173,9 @@ Hello, \\LaTeX!
                 >
                     <h1>Skills</h1>
                     <Skills></Skills>
-                    <SkillChart percentage={75} label="PHP" />
-                    <SkillChart percentage={80} label="Python" />
-                    <SkillChart percentage={40} label="Python" />
+                    {skills.map((skill) => (
+                        <SkillChart percentage={skill.percentage} label={skill.skill} />
+                    ))}
 
                     <Parallax className="container" pages={6} horizontal>
                         <Page offset={0} content={<TypedProgrammingCode language="sql" code={sqlCode} />}/>
