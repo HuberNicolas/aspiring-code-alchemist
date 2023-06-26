@@ -3,19 +3,7 @@ import ReactApexChart from 'react-apexcharts';
 
 const SkillChart = ({ percentage, label }) => {
     const getColor = (percentage) => {
-        if (percentage >= 100) {
-            return '#00ff00';
-        } else if (percentage >= 75) {
-            return '#a5ff90';
-        } else if (percentage >= 50) {
-            return '#a5c261';
-        } else if (percentage >= 25) {
-            return 'rgb(250, 208, 0)';
-        } else if (percentage >= 5) {
-            return 'rgb(255, 157, 0)';
-        } else {
-            return 'rgb(255, 98, 140)';
-        }
+        return '#FAD000FF';
     };
 
 
@@ -27,6 +15,19 @@ const SkillChart = ({ percentage, label }) => {
                 type: 'radialBar',
                 toolbar: {
                     show: false
+                },
+                animations: {
+                    enabled: true,
+                    easing: 'easeout',
+                    speed: (Math.random()+1)*10000,
+                    animateGradually: {
+                        enabled: true,
+                        delay: 15000
+                    },
+                    dynamicAnimation: {
+                        enabled: true,
+                        speed: 350
+                    }
                 }
             },
             plotOptions: {

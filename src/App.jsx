@@ -104,6 +104,10 @@ const skills = [
         skill: 'SQL',
         percentage: 60
     },
+    {
+        skill: 'HTML & CSS',
+        percentage: 60
+    },
 
 ];
 
