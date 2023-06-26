@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import {useEffect, useState} from 'react';
 import jokes from '../assets/jokes.json';
 import Button from '@mui/material/Button';
 import FlyingEmojis from './FlyingEmojis';

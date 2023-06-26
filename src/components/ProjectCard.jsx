@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import {CardActionArea, CardActions, Chip, Stack} from '@mui/material';
 import Button from "@mui/material/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import FaceIcon from '@mui/icons-material/Face';
 
 export default function ProjectCard(props) {

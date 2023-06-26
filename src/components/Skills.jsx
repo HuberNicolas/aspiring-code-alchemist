@@ -108,25 +108,14 @@ const FrontendDevelopment = () => {
             leveraging React to build a modern and responsive user interface.
           &lt;/p&gt;
           &lt;p&gt;
-            One of my notable projects is the Tower Defense game, which I developed mainly using JavaScript.
+            One of my notable projects is the Tower Defense game,
+            which I developed mainly using JavaScript.
           &lt;/p&gt;
         &lt;/div&gt;
       );
     };
-    export default FrontendDevelopment;
-  \`;
-
-  return (
-    <div>
-      <h2>Sample React Code</h2>
-      <HighlightedCode code={frontendCode} language="jsx" />
-    </div>
-  );
-};
-
-export default FrontendDevelopment;
-
-`;
+    export default FrontendDevelopment;`
+;
 
 
 const programming = [

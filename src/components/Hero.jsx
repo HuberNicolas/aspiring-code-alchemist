@@ -1,12 +1,9 @@
 import Typewriter from "./Typewriter.jsx";
-import Button from "@mui/material/Button";
 import ProgrammingCode from "./ProgrammingCode.jsx";
-import Jokes from "./Jokes.jsx";
 import heroImage from "../assets/hero-bg.png";
 import {Avatar} from "@mui/material";
 import './Typewriter.scss';
 import './Hero.scss';
-import {ProgressBar} from "react-loader-spinner";
 
 const about = ['Aspiring Code Alchemist', 'Floorball Enthusiast', 'IT Security Practitioner'];
 const phpCode = `<?php
@@ -47,7 +44,8 @@ function Hero() {
             </div>
             <div id="hero-container">
                 <Avatar alt="Nicolas Huber" src={heroImage} sx={{
-                    marginRight: 10,
+                    marginLeft: '10px',
+                    marginRight: '10px',
                     height: '10%',
                     width: '25%',
                     borderTopLeftRadius: '15%',
@@ -57,15 +55,6 @@ function Hero() {
                 }}/>
                 <ProgrammingCode language="php" code={phpCode} />
             </div>
-            <ProgressBar
-                height="80"
-                width="full"
-                ariaLabel="progress-bar-loading"
-                wrapperStyle={{}}
-                wrapperClass="progress-bar-wrapper"
-                borderColor = '#00bcd4'
-                barColor = '#009688'
-            />
         </>
     )
 }

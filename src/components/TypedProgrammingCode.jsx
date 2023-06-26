@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import {useEffect, useRef} from 'react';
 import Prism from 'prismjs';
 // import 'prismjs/themes/prism-dark.css'; // prism original
 import '../../themes/prism-shades-of-purple.css';

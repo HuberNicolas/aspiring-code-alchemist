@@ -1,7 +1,8 @@
 import {
     faCss3,
     faDocker,
-    faHtml5, faJava,
+    faHtml5,
+    faJava,
     faJs,
     faLinux,
     faPhp,

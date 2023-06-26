@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Grow, Typography } from '@mui/material';
+import React, {useEffect, useState} from 'react';
+import {Grow, Typography} from '@mui/material';
 
 const FlyingEmojis = ({ emojiType }) => {
   const [showEmojis, setShowEmojis] = useState(false);

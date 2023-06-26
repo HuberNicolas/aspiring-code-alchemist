@@ -10,11 +10,10 @@ import MergeIcon from '@mui/icons-material/Merge';
 import SendIcon from '@mui/icons-material/Send';
 
 import avatarImage from '../assets/profile.jpg';
-import {Dna} from "react-loader-spinner";
 
 const pages = [
     { title: 'Home', icon: <HomeIcon /> },
-    { title: 'Education', icon: <SchoolIcon /> },
+    { title: 'Resume', icon: <SchoolIcon /> },
     { title: 'Skills', icon: <TerminalIcon/> },
     { title: 'Projects', icon: <MergeIcon/> },
     { title: 'About', icon: <PersonIcon/>},
@@ -60,7 +59,6 @@ function Navbar() {
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                             <IconButton
                                 size="large"
-                                aria-label="account of current user"
                                 aria-controls="menu-appbar"
                                 aria-haspopup="true"
                                 onClick={handleOpenNavMenu}

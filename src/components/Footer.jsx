@@ -1,8 +1,6 @@
 import React from 'react';
-import {AppBar, Avatar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography} from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+import {Typography} from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
-import AdbIcon from '@mui/icons-material/Adb';
 import PersonIcon from '@mui/icons-material/Person';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import MergeIcon from '@mui/icons-material/Merge';

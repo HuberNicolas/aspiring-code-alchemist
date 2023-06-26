@@ -1,4 +1,4 @@
-import { saveAs } from 'file-saver';
+import {saveAs} from 'file-saver';
 import huberCV from '../assets/huber-cv.pdf';
 import {Button} from "@mui/material";
 

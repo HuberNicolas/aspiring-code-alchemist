@@ -4,9 +4,7 @@ function About() {
 
     return (
         <>
-            <div>About</div>
             <PersonalInfoCard></PersonalInfoCard>
-
         </>
     )
 }

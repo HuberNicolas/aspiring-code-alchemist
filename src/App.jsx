@@ -5,30 +5,12 @@ import Contact from "./components/Contact.jsx";
 import Jokes from "./components/Jokes.jsx";
 import Resume from "./components/Resume.jsx";
 import Projects from "./components/Projects.jsx";
-import PersonalTimeline from "./components/PersonalTimeline.jsx";
-import TypedProgrammingCode from "./components/TypedProgrammingCode.jsx";
 import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 import {useRef} from "react";
 import {createTheme} from '@mui/material/styles';
-import {Grid, ThemeProvider} from "@mui/material";
-import ProjectCard from "./components/ProjectCard.jsx";
-import {
-    faCss3,
-    faDocker,
-    faHtml5,
-    faJava,
-    faJs,
-    faLinux,
-    faPhp,
-    faPython,
-    faReact,
-    faSymfony
-} from "@fortawesome/free-brands-svg-icons";
-import CareerTimeline from "./components/CareerTimeline.jsx";
+import {ThemeProvider, Typography} from "@mui/material";
 import Footer from "./components/Footer.jsx";
-import SkillChart from "./components/SkillChart.jsx";
 import About from "./components/About.jsx";
-import PDFDownloadComponent from "./components/PDFDownloader.jsx";
 
 
 const theme = createTheme({
@@ -69,27 +51,87 @@ function App() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={1}
-                    onClick={() => ref.current.scrollTo(3)}
                 >
+                    <Typography
+                        variant="h2"
+                        align="center"
+                        sx={{
+                            mr: 2,
+                            fontWeight: 500,
+                            letterSpacing: '.1rem',
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        Resume
+                    </Typography>
                     <Resume></Resume>
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={2}
-                    onClick={() => ref.current.scrollTo(1)}
                     speed={0.5}
                 >
+                    <Typography
+                        variant="h2"
+                        align="center"
+                        sx={{
+                            mr: 2,
+                            fontWeight: 500,
+                            letterSpacing: '.1rem',
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        Skills
+                    </Typography>
                     <Skills></Skills>
                 </ParallaxLayer>
-                <ParallaxLayer offset={3} speed={0.75}>
-                    <h1>Projects</h1>
+                <ParallaxLayer offset={3.5} speed={0.75}>
+                    <Typography
+                        variant="h2"
+                        align="center"
+                        sx={{
+                            mr: 2,
+                            fontWeight: 500,
+                            letterSpacing: '.1rem',
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        Projects
+                    </Typography>
                     <Projects></Projects>
                 </ParallaxLayer>
                 <ParallaxLayer offset={4} speed={0.8}>
-                    <h1>About</h1>
+                    <Typography
+                        variant="h2"
+                        align="center"
+                        sx={{
+                            mr: 2,
+                            fontWeight: 500,
+                            letterSpacing: '.1rem',
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        About
+                    </Typography>
                     <About></About>
                 </ParallaxLayer>
                 <ParallaxLayer offset={5} speed={0.8}>
-                    <h1>Contact</h1>
+                    <Typography
+                        variant="h2"
+                        align="center"
+                        sx={{
+                            mr: 2,
+                            fontWeight: 500,
+                            letterSpacing: '.1rem',
+                            color: 'inherit',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        Contact
+                    </Typography>
                     <Contact></Contact>
                     <Jokes></Jokes>
                 </ParallaxLayer>
