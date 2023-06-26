@@ -17,13 +17,13 @@ import React from "react";
 const projects = [
     {
         name: 'Aspiring Code Alchemist Portfolio',
-        description: 'This is the first project',
+        description: 'Personal Portfolio Website created with React and Material UI.',
         skills: [{ skill: 'React', icon: faReact }, { skill: 'JS', icon: faJs }, { skill: 'HTML', icon: faHtml5 }, { skill: 'CSS', icon: faCss3 }],
         repoLink: 'https://github.com/HuberNicolas/aspiring-code-alchemist'
     },
     {
         name: 'ComBaCal',
-        description: 'This is the first project',
+        description: 'Master Project @ UZH: Creating a Supplymanager (app) for Community Care Workers in Lesotho, that is orchestrated with an admin-panel.',
         skills: [
             { skill: 'PHP', icon: faPhp },
             { skill: 'Symfony', icon: faSymfony },
@@ -37,7 +37,7 @@ const projects = [
     },
     {
         name: 'OKCupid - Visual Data Analysis',
-        description: 'This is the second project',
+        description: 'Semester project @ UZH: Data Analysis with real-world data from the OKCupid dating app. (Award: Impact on Research)',
         skills: [
             { skill: 'Python', icon: faPython },
             { skill: 'React', icon: faReact }
@@ -46,7 +46,7 @@ const projects = [
     },
     {
         name: 'MTD Stratety Selection Agent',
-        description: 'This is the second project',
+        description: 'Bachelor Thesis @ UZH: MTD Strategy Selection Agent for IoT devices.',
         skills: [
             { skill: 'Python', icon: faPython },
             { skill: 'Linux', icon: faLinux }
@@ -55,7 +55,7 @@ const projects = [
     },
     {
         name: 'Heart Disease - Data Analysis',
-        description: 'This is the second project',
+        description: 'Semester project @ UZH: Data Analysis with real-world medical data to shed light on the cardiovascular diseases.',
         skills: [
             { skill: 'Python', icon: faPython }
         ],
@@ -63,7 +63,7 @@ const projects = [
     },
     {
         name: 'Pokemon Tower Defense',
-        description: 'This is the second project',
+        description: 'Semester project @ UZH: Tower defense game with Pokémon sprites that has Front- and Backend.',
         skills: [
             { skill: 'Java', icon: faJava },
             { skill: 'React', icon: faReact },
@@ -75,7 +75,7 @@ const projects = [
     },
     {
         name: 'Numerical Methods - MATLAB implementations',
-        description: 'This is the second project',
+        description: 'Various implementations of numerical methods.',
         skills: [
             { skill: 'MATLAB', icon: "" }
         ],
