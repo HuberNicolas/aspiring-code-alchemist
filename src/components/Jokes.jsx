@@ -60,8 +60,8 @@ const Jokes = () => {
                         </Button>
                     </Grid>
                 </Grid>
+                <FlyingEmojis emojiType={emojiType} />
             </div>
-            <FlyingEmojis emojiType={emojiType} />
         </>
     );
 };

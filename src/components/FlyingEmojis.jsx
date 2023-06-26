@@ -18,29 +18,29 @@ const FlyingEmojis = ({ emojiType }) => {
 
   return (
       <Grow in={showEmojis} key={emojiKey}>
-        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '5px' }}>
           {emojiType === 'funny' && (
               <>
-                <Typography variant="h2" style={{ marginRight: '5px' }}>
+                <Typography variant="h4" style={{ marginRight: '5px' }}>
                   😃
                 </Typography>
-                <Typography variant="h2" style={{ marginRight: '5px' }}>
+                <Typography variant="h4" style={{ marginRight: '5px' }}>
                   😂
                 </Typography>
-                <Typography variant="h2" style={{ marginRight: '5px' }}>
+                <Typography variant="h4" style={{ marginRight: '5px' }}>
                   🤣
                 </Typography>
               </>
           )}
           {emojiType === 'notFunny' && (
               <>
-                <Typography variant="h2" style={{ marginRight: '5px' }}>
+                <Typography variant="h4" style={{ marginRight: '5px' }}>
                   👎
                 </Typography>
-                <Typography variant="h2" style={{ marginRight: '5px' }}>
+                <Typography variant="h4" style={{ marginRight: '5px' }}>
                   😕
                 </Typography>
-                <Typography variant="h2" style={{ marginRight: '5px' }}>
+                <Typography variant="h4" style={{ marginRight: '5px' }}>
                   😒
                 </Typography>
               </>
