@@ -12,7 +12,7 @@ export default function ProjectCard(props) {
 
     return (
         <Card sx={{
-            maxWidth: 345,
+            maxWidth: 400,
             backgroundColor: '#009688'
         }}>
             <CardActionArea>
@@ -23,25 +23,32 @@ export default function ProjectCard(props) {
                     <Typography variant="body2" color="text.secondary">
                         {description}
                     </Typography>
-                    <div className={"skillList"}>
-                        <Typography variant="body2" color="text.secondary">
-                            Skills
-                        </Typography>
-                        {skills.map((skill, index) => (
-                            <FontAwesomeIcon key={index} icon={skill} />
-                        ))}
-                    </div>
                 </CardContent>
                 <CardActions>
                     <a href={repoLink} target="_blank" rel="noopener noreferrer">
-                        <Button>Repository</Button>
+                        <Button  variant="contained" color="primary">Repository</Button>
                     </a>
                 </CardActions>
-                <Stack direction="row" spacing={1}>
-                    <Chip icon={<FaceIcon />} label="primary" color="primary" />
-                    <Chip icon={<FaceIcon />} label="secondary" color="secondary" />
-                    <Chip icon={<FaceIcon />} label="success" color="success" />
-                </Stack>
+                <div className={"skillList"}>
+                    <Typography variant="body2" color="text.secondary">
+                        Skills
+                    </Typography>
+                    <Stack direction="row" spacing={1} flexWrap="wrap">
+                        {skills.map((skill, index) => (
+                            <Chip
+                                key={index}
+                                icon={<FontAwesomeIcon icon={skill.icon} />}
+                                label={skill.skill}
+                                color="primary"
+                                sx={{
+                                    marginRight: "5px",
+                                    marginLeft: "5px",
+                                    marginBottom: "5px"
+                                }}
+                            />
+                        ))}
+                    </Stack>
+                </div>
             </CardActionArea>
         </Card>
     );
