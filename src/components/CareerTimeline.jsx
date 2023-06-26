@@ -42,8 +42,8 @@ function PersonalTimeline() {
                     <TimelineContent>
                         <Typography variant="h5">jkweb AG - Zurich</Typography>
                         <Typography variant="h7">(June - September 2021)</Typography>
-                        <Typography variant="h6">Backend Developer</Typography>
-                        <Typography variant="h6">Internship (full-time)</Typography>
+                        <Typography variant="h6">Backend Developer (Internship)</Typography>
+                        <Typography variant="h6">full-time</Typography>
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
