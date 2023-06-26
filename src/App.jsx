@@ -145,7 +145,7 @@ antivirus_software = {
 
 const sqlCode = `SELECT * FROM skills`; // Skills
 
-const jsCode = `
+const jsxCode = `
 import React from 'react';
 const FrontendDevelopment = () => {
       return (
@@ -193,7 +193,7 @@ const programming = [
         language: 'python'
     },
     {
-        code: jsCode,
+        code: jsxCode,
         language: 'jsx'
     },
     {
@@ -252,12 +252,12 @@ const skills = [
         percentage: 80
     },
     {
-        skill: 'Frontend',
-        percentage: 40
-    },
-    {
         skill: 'Data Engineering',
         percentage: 70
+    },
+    {
+        skill: 'Frontend',
+        percentage: 40
     },
     {
         skill: 'Cyber Security',
@@ -310,14 +310,10 @@ function App() {
                         {skills.map((skill, index) => (
                             <Grid item key={index} xs={12} sm={6}>
                                 <SkillChart percentage={skill.percentage} label={skill.skill} />
-                            </Grid>
-                        ))}
-                    </Grid>
-
-                    <Grid container spacing={2}>
-                        {programming.map((programming, index) => (
-                            <Grid item key={index} xs={12} sm={6}>
-                                <TypedProgrammingCode language={programming.language} code={programming.code} />
+                                <TypedProgrammingCode
+                                    language={programming[index].language}
+                                    code={programming[index].code}
+                                />
                             </Grid>
                         ))}
                     </Grid>
