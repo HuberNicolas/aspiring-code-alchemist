@@ -26,11 +26,11 @@ class Me {
     }
     
     public function introduce(ManagerRegistry $doctrine) {
-        $entityManager = $doctrine->getManager();
-        $academicHistory = $entityManager->getRepository(Degree::class)->findBy([], ['$gradDate' => 'DES']);
-        $careerPath = $entityManager->getRepository(Career::class)->findBy([], ['$startDate' => 'DES']);
-        $skills = $entityManager->getRepository(Skills::class)->findAllGroupedByArea();
-        $interests = $entityManager->getRepository(Interests::class)->findAll();
+        $em = $doctrine->getManager();
+        $academicHistory = $em->getRepository(Degree::class)->findBy([], ['$gradDate' => 'DES']);
+        $careerPath = $em->getRepository(Career::class)->findBy([], ['$startDate' => 'DES']);
+        $skills = $em->getRepository(Skills::class)->findAllGroupedByArea();
+        $interests = $em->getRepository(Interests::class)->findAll();
     }
 }
 `;
@@ -44,8 +44,7 @@ function Hero() {
             </div>
             <div id="hero-container">
                 <Avatar alt="Nicolas Huber" src={heroImage} sx={{
-                    marginLeft: '10px',
-                    marginRight: '10px',
+                    marginLeft: '5px',
                     height: '10%',
                     width: '25%',
                     borderTopLeftRadius: '15%',
