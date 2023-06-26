@@ -1,0 +1,24 @@
+// App.scss
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("src/fonts/JetBrains_Mono/static/JetbrainsMono-Regular.ttf") format('truetype');
+}
+
+// Colors
+$navy: #0a192f;
+$white: #e6f1ff;
+
+:root {
+  // Optional: Global styles for your root element
+}
+
+body {
+  background-color: $navy;
+  color: $white;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+:export {
+
+}

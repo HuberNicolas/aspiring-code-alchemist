@@ -1,0 +1,84 @@
+{
+  "jokes_quotes": [
+    {
+      "quote": "Debugging: being the detective in a crime movie where you are also the murderer.",
+      "author": "Filipe Fortes"
+    },
+    {
+      "quote": "There are only 10 types of people in the world: those who understand binary, and those who don't.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Java is to JavaScript what car is to carpet.",
+      "author": "Chris Heilmann"
+    },
+    {
+      "quote": "Why do programmers prefer dark mode? Because light attracts bugs.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the data scientist break up with her boyfriend? He didn't understand the importance of good data hygiene.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the IoT device need therapy? It had trust issues with its MQTT broker.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the data visualization expert switch to decaf? He couldn't handle the jitter in his graphs.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the data pipeline developer cross the road? To get to the other data center.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the IoT security expert take up gardening? She needed to learn how to prune her attack surface.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "The best thing about a Boolean is even if you are wrong, you are only off by a bit.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "I would love to change the world, but they won't give me the source code.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why do programmers wear glasses? Because they can't C#",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why do programmers prefer dark chocolate? Because it's bitter like their code.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why do Java developers wear glasses? Because they can't C#.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the data wrangler go to the rodeo? To learn how to lasso and wrangle data streams.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the IoT device go to the doctor? It had a data transmission virus.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the data visualization expert switch to watercolors? He wanted to paint his data in a new light.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the data pipeline developer start a fire? He needed to heat up his data pipeline.",
+      "author": "Unknown"
+    },
+    {
+      "quote": "Why did the IoT security expert become a detective? She needed to track down the culprit of a data breach.",
+      "author": "Unknown"
+    }
+  ]
+}

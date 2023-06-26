@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Fonts
+/src/fonts/
+!/src/fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf
