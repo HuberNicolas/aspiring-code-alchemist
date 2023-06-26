@@ -1,27 +1,34 @@
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
-import Education from "./components/Education.jsx";
 import Contact from "./components/Contact.jsx";
 import Jokes from "./components/Jokes.jsx";
 import Resume from "./components/Resume.jsx";
 import Projects from "./components/Projects.jsx";
-import Typewriter from "./components/Typewriter.jsx";
 import PersonalTimeline from "./components/PersonalTimeline.jsx";
 import TypedProgrammingCode from "./components/TypedProgrammingCode.jsx";
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 import {useRef} from "react";
-import { createTheme } from '@mui/material/styles';
+import {createTheme} from '@mui/material/styles';
 import {Grid, ThemeProvider} from "@mui/material";
-import Button from '@mui/material/Button';
 import ProjectCard from "./components/ProjectCard.jsx";
-import {faGithub, faPython, faHtml5, faCss3, faReact, faJs, faSymfony, faDocker, faPhp, faJava, faLinux} from "@fortawesome/free-brands-svg-icons";
-import ProgrammingCode from "./components/ProgrammingCode.jsx";
+import {
+    faCss3,
+    faDocker,
+    faHtml5,
+    faJava,
+    faJs,
+    faLinux,
+    faPhp,
+    faPython,
+    faReact,
+    faSymfony
+} from "@fortawesome/free-brands-svg-icons";
 import CareerTimeline from "./components/CareerTimeline.jsx";
-import {Dna} from "react-loader-spinner";
 import Footer from "./components/Footer.jsx";
 import SkillChart from "./components/SkillChart.jsx";
 import About from "./components/About.jsx";
+import PDFDownloadComponent from "./components/PDFDownloader.jsx";
 
 
 const theme = createTheme({
@@ -188,10 +195,11 @@ function App() {
                     offset={1}
                     onClick={() => ref.current.scrollTo(3)}
                 >
-                    <Education></Education>
+                    <Resume></Resume>
+                    <PDFDownloadComponent />
                     <PersonalTimeline></PersonalTimeline>
                     <CareerTimeline></CareerTimeline>
-                    <Resume></Resume>
+
 
                 </ParallaxLayer>
                 <ParallaxLayer
