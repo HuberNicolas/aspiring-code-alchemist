@@ -1,11 +1,14 @@
+import PDFDownloadComponent from "./PDFDownloader.jsx";
+import PersonalTimeline from "./PersonalTimeline.jsx";
+import CareerTimeline from "./CareerTimeline.jsx";
 
 function Resume() {
 
     return (
         <>
-            <div>
-                Resume
-            </div>
+            <PDFDownloadComponent />
+            <PersonalTimeline></PersonalTimeline>
+            <CareerTimeline></CareerTimeline>
         </>
     )
 }
