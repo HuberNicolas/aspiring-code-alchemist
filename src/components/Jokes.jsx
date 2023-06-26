@@ -2,6 +2,10 @@ import {useEffect, useState} from 'react';
 import jokes from '../assets/jokes.json';
 import Button from '@mui/material/Button';
 import FlyingEmojis from './FlyingEmojis';
+import {Avatar, Grid} from "@mui/material";
+import PersonalInfoCard from "./PersonalInfoCard.jsx";
+import profileImage from "../assets/profile.jpg";
+import Contact from "./Contact.jsx";
 
 const Jokes = () => {
     const [randomJoke, setRandomJoke] = useState('');
@@ -42,15 +46,23 @@ const Jokes = () => {
             <div>
                 <p>{randomJoke}</p>
                 <p>- {randomAuthor}</p>
-                <Button variant="contained" color="primary" onClick={handleNextJokeClick}>
-                    Next Joke
-                </Button>
-                <Button variant="contained" color="secondary" onClick={handleFunnyButtonClick}>
-                    Funny
-                </Button>
-                <Button variant="contained" color="warning" onClick={handleNotFunnyButtonClick}>
-                    Not so funny
-                </Button>
+                <Grid container spacing={2}>
+                    <Grid item xs={12} sm={4}>
+                        <Button variant="contained" color="primary" onClick={handleNextJokeClick}>
+                            Next Joke
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Button variant="contained" color="secondary" onClick={handleFunnyButtonClick}>
+                            Funny
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Button variant="contained" color="warning" onClick={handleNotFunnyButtonClick}>
+                            Not so funny
+                        </Button>
+                    </Grid>
+                </Grid>
             </div>
             <FlyingEmojis emojiType={emojiType} />
         </>

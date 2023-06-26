@@ -22,7 +22,7 @@ const pages = [
 function Footer() {
 
     return (
-        <div style={{ position: 'sticky', bottom: 0 }}>
+        <div>
             <div
                 style={{
                     display: 'flex',

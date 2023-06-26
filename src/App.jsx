@@ -45,7 +45,7 @@ function App() {
     <>
         <ThemeProvider theme={theme}>
             <Navbar></Navbar>
-            <Parallax pages={6} ref={ref}>
+            <Parallax pages={5} ref={ref}>
                 <ParallaxLayer>
                     <Hero></Hero>
                 </ParallaxLayer>
@@ -117,26 +117,7 @@ function App() {
                         About
                     </Typography>
                     <About></About>
-                </ParallaxLayer>
-                <ParallaxLayer offset={5} speed={0.8}>
-                    <Typography
-                        variant="h2"
-                        align="center"
-                        sx={{
-                            mr: 2,
-                            fontWeight: 500,
-                            letterSpacing: '.1rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        Contact
-                    </Typography>
-                    <Contact></Contact>
-                    <Jokes></Jokes>
-                </ParallaxLayer>
-                <ParallaxLayer offset={5.8} speed={0.2}>
-                    <Footer></Footer>
+
                 </ParallaxLayer>
             </Parallax>
 

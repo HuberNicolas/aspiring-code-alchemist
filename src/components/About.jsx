@@ -1,6 +1,9 @@
 import PersonalInfoCard from "./PersonalInfoCard.jsx";
 import profileImage from "../assets/profile.jpg";
 import {Avatar, Grid} from "@mui/material";
+import Contact from "./Contact.jsx";
+import Jokes from "./Jokes.jsx";
+import Footer from "./Footer.jsx";
 
 function About() {
 
@@ -27,7 +30,13 @@ function About() {
                             boxSizing: 'border-box',
                         }}
                     />
-
+                    <Contact></Contact>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Jokes></Jokes>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <Footer></Footer>
                 </Grid>
             </Grid>
         </>
