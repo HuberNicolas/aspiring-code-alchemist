@@ -30,8 +30,8 @@ function PersonalTimeline() {
                     <TimelineContent>
                         <Typography variant="h5">University of Zurich</Typography>
                         <Typography variant="h7">(2022 - now)</Typography>
-                        <Typography variant="h6">Msc Informatics</Typography>
-                        <Typography variant="h6">Softwaresystems Major & Datascience Minor</Typography>
+                        <Typography variant="h6">MSc Informatics</Typography>
+                        <Typography variant="h6">Software Systems Major & Datascience Minor</Typography>
 
                     </TimelineContent>
                 </TimelineItem>
@@ -43,8 +43,8 @@ function PersonalTimeline() {
                     <TimelineContent>
                         <Typography variant="h5">University of Zurich</Typography>
                         <Typography variant="h7">(2019 - 2022)</Typography>
-                        <Typography variant="h6">Bsc Informatics</Typography>
-                        <Typography variant="h6">Softwaresystems Major & Business Informatics Minor</Typography>
+                        <Typography variant="h6">BSc Informatics</Typography>
+                        <Typography variant="h6">Software Systems Major & Information Systems Minor</Typography>
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
