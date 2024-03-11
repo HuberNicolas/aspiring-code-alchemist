@@ -22,6 +22,23 @@ function PersonalTimeline() {
                     </TimelineSeparator>
                     <TimelineContent>Education</TimelineContent>
                 </TimelineItem>
+
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineDot color="secondary" />
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent>
+                        <Typography variant="h5">University of Technology Sydney</Typography>
+                        <Typography variant="h7">(now)</Typography>
+                        <Typography variant="h6">Postgraduate Exchange Student</Typography>
+                        <Typography variant="h6">Courses in Cyber Security and Data Science</Typography>
+
+                    </TimelineContent>
+                </TimelineItem>
+
+
+
                 <TimelineItem>
                     <TimelineSeparator>
                         <TimelineDot color="secondary" />

@@ -25,7 +25,7 @@ const PersonalInfoCard = () => {
                     Character Traits 🗝️
                 </Typography>
                 <Typography sx={{ marginBottom: '2rem' }}>
-                    Outgoing, organised and proactive, curiosity driven, sometimes lost in details
+                    Outgoing, organised and proactive, curiosity driven, solution-oriented, sometimes lost in details
                 </Typography>
 
                 <Typography variant="h6" component="h2">
@@ -33,13 +33,6 @@ const PersonalInfoCard = () => {
                 </Typography>
                 <Typography sx={{ marginBottom: '2rem' }}>
                     Summer, Roof terraces, Hearts of Iron 4, Lasagne, Byron Bay and Campfires
-                </Typography>
-
-                <Typography variant="h6" component="h2">
-                    Le me in a nutshell 🌰
-                </Typography>
-                <Typography sx={{ marginBottom: '2rem' }}>
-                    Mastering informatics & data science at UZH while moonlighting at jkweb, I navigate the backend realm, ensure smooth app testing, and occasionally sprinkle knowledge on apprentice minds at BBC Bern
                 </Typography>
             </CardContent>
         </Card>

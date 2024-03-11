@@ -71,7 +71,7 @@ function App() {
                             variant="h6"
                             noWrap
                             component="a"
-                            href="/aspiring-code-alchemist/"
+                            href="/"
                             sx={{
                                 mr: 2,
                                 display: { xs: 'none', md: 'flex' },
