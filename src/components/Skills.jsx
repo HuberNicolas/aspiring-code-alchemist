@@ -96,7 +96,7 @@ import React from 'react';
 const FrontendDevelopment = () => {
       return (
         &lt;div&gt;
-          &lt;h2&gt;Frontend Development&lt;/h2&gt;
+          &lt;h1&gt;Frontend Development&lt;/h1&gt;
           &lt;p&gt;
             In my frontend development journey, I have primarily focused on using the
             Twig template language for my Symfony projects.
